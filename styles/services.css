@@ -1,0 +1,127 @@
+/*Parent section*/
+.services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ebebef;
+	transition: background-color 0.2s ease;
+}
+
+/*Parent div*/
+.services-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: var(--default-width);
+	margin: 70px 0;
+}
+
+/*Texts title*/
+.services-content h4 {
+	text-align: center;
+	font-size: clamp(12px, 2vw, 14px);
+	font-family: var(--secondary-font);
+	letter-spacing: 5px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 70px;
+	background: -webkit-linear-gradient(#99004d, #ff0080);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Texts div*/
+.services-texts {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.services-texts h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: clamp(25px, 5vw, 45px);
+	font-family: var(--secondary-font);
+	color: var(--primary-bold);
+	text-align: center;
+}
+
+.services-texts p {
+	text-align: center;
+}
+
+/*Grid Content*/
+.services-content-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 25px;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.services-grid {
+	background-color: var(--primary-background);
+	width: clamp(100px, 85vw, 100%);
+	height: auto;
+	border-radius: 2px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.services-grid:hover {
+	transform: scale(1.05);
+}
+
+.services-grid img {
+	margin-top: 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.services-grid a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.services-grid .grid-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 30px;
+}
+
+.services-grid h3 {
+	margin: 20px 0;
+	font-size: clamp(17px, 2vw, 18px);
+	font-family: var(--secondary-font);
+	color: var(--primary-bold);
+}
+
+.services-grid p {
+	height: 100px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*Responsive Content*/
+@media (max-width: 1300px) {
+	/*Grid Content*/
+	.services-content-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 800px) {
+	/*Grid Content*/
+	.services-content-grid {
+		grid-template-columns: 1fr;
+	}
+}

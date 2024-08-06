@@ -1,0 +1,105 @@
+/*BG image for home page*/
+.home {
+	background-image: url("../images/home-bg.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: darken;
+}
+
+/*Parent div*/
+.home-content {
+	text-align: center;
+	margin: 200px 0;
+	width: var(--default-width);
+}
+
+.home-content h4 {
+	font-weight: bold;
+	font-size: clamp(12px, 2vw, 14px);
+	font-family: var(--secondary-font);
+	margin: 0;
+	letter-spacing: 5px;
+	background: -webkit-linear-gradient(#99004d, #ff0080);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.home-content h1 {
+	color: var(--secondary-bold);
+	font-size: clamp(37px, 8.5vw, 70px);
+	font-weight: 600;
+	font-family: var(--secondary-font);
+	width: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.home-content p {
+	color: var(--secondary-text);
+	margin-bottom: 50px;
+}
+
+/*Buttons div*/
+.home-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 20px;
+}
+
+.home-buttons .btn {
+	font-family: var(--primary-font);
+	width: clamp(120px, 23vw, 140px);
+	font-size: clamp(12px, 2vw, 14px);
+	letter-spacing: 1px;
+	padding: 11px 0;
+	border-radius: 5px;
+	color: var(--secondary-bold);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.home-button-1 {
+	background: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-button-1:hover {
+	background: transparent;
+	transform: scale(1.05);
+}
+
+.home-button-2 {
+	background: transparent;
+	border: 2px solid var(--primary-color);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-button-2:hover {
+	background: var(--primary-color);
+	transform: scale(1.05);
+}
+
+.home-buttons .btn:active {
+	opacity: 0.5;
+}
+
+/*Responsive content*/
+@media (max-width: 750px) {
+	/*Buttons div*/
+	.home-buttons {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 10px;
+	}
+}

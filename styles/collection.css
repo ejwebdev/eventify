@@ -1,0 +1,139 @@
+/*Parent section*/
+.collection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Parent div*/
+.collection-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: var(--default-width);
+	margin: 70px 0;
+}
+
+/*Texts title*/
+.collection-content h4 {
+	text-align: center;
+	font-size: clamp(12px, 2vw, 14px);
+	font-family: var(--secondary-font);
+	letter-spacing: 5px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 70px;
+	background: -webkit-linear-gradient(#99004d, #ff0080);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Texts div*/
+.collection-texts {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.collection-texts h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: clamp(25px, 5vw, 45px);
+	font-family: var(--secondary-font);
+	color: var(--primary-bold);
+	text-align: center;
+}
+
+.collection-texts p {
+	text-align: center;
+}
+
+/*Grid Content*/
+.collection-content-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 25px;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.collection-content-grid a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.collection-grid {
+	position: relative;
+	width: clamp(100px, 85vw, 100%);
+	height: auto;
+	border-radius: 2px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+}
+
+.collection-grid:hover {
+	transform: scale(1.05);
+}
+
+.collection-grid img {
+	display: block;
+	object-fit: cover;
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+}
+
+/*Grid Overlay Texts*/
+.collection-overlay {
+	position: absolute;
+	bottom: 0;
+	height: auto;
+	width: 100%;
+	transition: opacity 0.2s ease;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	border-radius: 0 0 2px 2px;
+	opacity: 0;
+}
+
+.collection-overlay-texts {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.collection-grid:hover .collection-overlay {
+	opacity: 1;
+}
+
+.collection-grid h3 {
+	color: var(--secondary-bold);
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: clamp(16px, 2vw, 17px);
+	font-family: var(--secondary-font);
+}
+
+.collection-grid p {
+	color: var(--secondary-text);
+	font-size: 13px;
+}
+
+/*Responsive Content*/
+@media (max-width: 1300px) {
+	/*Grid Content*/
+	.collection-content-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 800px) {
+	/*Grid Content*/
+	.collection-content-grid {
+		grid-template-columns: 1fr;
+	}
+}

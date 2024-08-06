@@ -1,0 +1,152 @@
+:root {
+	/*Fonts*/
+	--primary-font: "Poppins", sans-serif;
+	--secondary-font: "Montserrat", sans-serif;
+	/*Text color*/
+	--primary-text: #3c3c3c;
+	--secondary-text: #e1e2e7;
+	/*Bold text color*/
+	--primary-bold: #111111;
+	--secondary-bold: #f5f5f7;
+	/*Background color*/
+	--primary-background: #f5f5f7;
+	--secondary-background: #111111;
+	/*Others*/
+	--primary-color: #cc0066;
+	--default-width: clamp(100px, 85vw, 1300px);
+}
+
+* {
+	box-sizing: border-box;
+	outline: 1px solid re;
+}
+
+/*Body section*/
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--primary-text);
+	background-color: var(--primary-background);
+	font-family: var(--primary-font);
+	transition: background-color 0.2s ease;
+}
+
+p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/*Entire html scrollbar*/
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #3c3c3c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #4d4d4d;
+}
+
+/*-----------------------------------*/
+/*All Darkmode Feature*/
+html.dark-mode body {
+	background-color: var(--secondary-background);
+	color: var(--secondary-text);
+}
+
+html.dark-mode ::-webkit-scrollbar-track {
+	background-color: black;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb {
+	background-color: #d7d8df;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb:hover {
+	background-color: #e1e2e7;
+}
+
+/*All h3 and h1, and Pricing button*/
+html.dark-mode h3,
+html.dark-mode h1,
+html.dark-mode .pricing-button {
+	color: var(--secondary-bold);
+}
+
+/*Services & Pricing section*/
+html.dark-mode .services,
+html.dark-mode .pricing {
+	background-color: #1e1e1e;
+}
+
+html.dark-mode .services-grid,
+html.dark-mode .pricing-grid {
+	background-color: var(--secondary-background);
+}
+
+/*Footer section*/
+html.dark-mode .footer-social-links a {
+	background-color: var(--primary-background);
+}
+
+html.dark-mode .footer-social-links a i {
+	color: var(--secondary-background);
+	font-weight: bolder;
+}
+
+/*Elements animations when scrolled*/
+.hidden {
+	opacity: 0;
+	transition: all 1s;
+}
+
+/*For users who set their device to reduce motion*/
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
+.show {
+	opacity: 1;
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) and (pointer: coarse) {
+	/*Header*/
+	.header li a:hover {
+		color: var(--secondary-text);
+	}
+
+	/*Home & Contact page*/
+	.home .home-button-1:hover,
+	.contact .contact-button:hover {
+		background: var(--primary-color);
+		transform: none;
+	}
+
+	.home .home-button-2:hover {
+		background: transparent;
+		transform: none;
+	}
+
+	.pricing .pricing-button:hover {
+		background: transparent;
+		color: var(--primary-color);
+		transform: none;
+	}
+
+	/*Services, Collection, Pricing & Footer page*/
+	.services .services-grid:hover,
+	.collection .collection-grid:hover,
+	.pricing .pricing-grid:hover,
+	.footer .footer-social-links a:hover {
+		transform: none;
+	}
+}

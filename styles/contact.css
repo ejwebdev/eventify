@@ -1,0 +1,86 @@
+/*BG image for parent section*/
+.contact {
+	background-image: url("../images/contact-bg.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: darken;
+}
+
+/*Parent div*/
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: var(--default-width);
+	margin: 70px 0;
+}
+
+/*Contact title*/
+.contact-content h4 {
+	text-align: center;
+	font-size: clamp(12px, 2vw, 14px);
+	font-family: var(--secondary-font);
+	letter-spacing: 5px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 70px;
+	background: -webkit-linear-gradient(#99004d, #ff0080);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*Texts div*/
+.contact-texts {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+}
+
+.contact-texts h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: clamp(25px, 5vw, 45px);
+	font-family: var(--secondary-font);
+	color: var(--secondary-bold);
+}
+
+.contact-texts p {
+	color: var(--secondary-text);
+	margin-bottom: 50px;
+}
+
+/*Button*/
+.contact-button {
+	font-family: var(--primary-font);
+	width: clamp(120px, 23vw, 140px);
+	font-size: clamp(12px, 2vw, 14px);
+	letter-spacing: 1px;
+	padding: 11px 0;
+	border-radius: 5px;
+	color: var(--secondary-bold);
+	background: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.contact-button:hover {
+	background: transparent;
+	transform: scale(1.05);
+}
+
+.contact-button:active {
+	opacity: 0.5;
+}

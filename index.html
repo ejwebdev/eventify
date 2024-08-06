@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="images/my-logo.png" />
+		<title>Eventify</title>
+
+		<!--CSS link files-->
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/home.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+		<link rel="stylesheet" href="styles/services.css" />
+		<link rel="stylesheet" href="styles/why-choose-us.css" />
+		<link rel="stylesheet" href="styles/collection.css" />
+		<link rel="stylesheet" href="styles/pricing.css" />
+		<link rel="stylesheet" href="styles/contact.css" />
+		<link rel="stylesheet" href="styles/footer.css" />
+
+		<!--Fonts link from google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Fontawesome Icons Link-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<!--Header section-->
+		<header class="header">
+			<nav class="navbar">
+				<a href="" class="nav-logo">
+					<img src="images/logo-main.png" />
+				</a>
+
+				<ul class="nav-menu">
+					<li>
+						<a href="#home" class="nav-link">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="nav-link">About</a>
+					</li>
+					<li>
+						<a href="#">Services<i class="fa-solid fa-arrow-down"></i></a>
+						<ul>
+							<li><a href="#services" class="nav-link">Offers</a></li>
+							<li><a href="#choose" class="nav-link">Why Choose Us</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Portfolio<i class="fa-solid fa-arrow-down"></i></a>
+						<ul>
+							<li><a href="#collection" class="nav-link">Collection</a></li>
+							<li><a href="#pricing" class="nav-link">Pricing</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#contact" class="nav-link">Contact Us</a>
+					</li>
+				</ul>
+
+				<div class="nav-right">
+					<img src="icons/dark-mode.svg" title="Dark Mode" id="toggleDark" />
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!--Main content-->
+		<main class="main-content">
+			<!--Home page content here-->
+			<section class="home" id="home">
+				<div class="home-content hidden">
+					<h4>EVENTIFY</h4>
+					<h1 class="">Event Planner</h1>
+					<p>Make Every Event Perfect.</p>
+					<!-- Home Buttons here-->
+					<div class="home-buttons">
+						<a href="#about">
+							<button class="btn home-button-1" id="about-us-button">
+								ABOUT US
+							</button>
+						</a>
+						<a href="#services">
+							<button class="btn home-button-2" id="get-started-button">
+								GET STARTED
+							</button>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!--About page content here-->
+			<section class="about" id="about">
+				<div class="about-content hidden">
+					<h4>ABOUT US</h4>
+					<!-- Texts content here-->
+					<div class="about-content-texts">
+						<div class="about-texts">
+							<h1>Turn Your Event Concept Into Reality</h1>
+							<p>
+								Welcome to our state-of-the-art eventify, where technology and
+								unparalleled expertise converge to simplify your event planning.
+								Trust us to manage the logistics, so you can focus on crafting
+								unforgettable experiences.
+							</p>
+							<!-- Grid content here-->
+							<div class="about-content-grid js-about-grid">
+								<!--JS content here-->
+							</div>
+						</div>
+						<img class="about-img-1" src="images/about-pic.webp" />
+					</div>
+				</div>
+			</section>
+
+			<!--Services page content here-->
+			<section class="services" id="services">
+				<div class="services-content hidden">
+					<h4>SERVICES</h4>
+					<div class="services-texts">
+						<h1>Event Service We Offer</h1>
+						<p>
+							We create unforgettable events with detailed planning, seamless
+							ticketing, and efficient management. From corporate gatherings to
+							private celebrations, we bring your vision to life. Enjoy a
+							flawless event while we handle the logistics.
+						</p>
+					</div>
+					<!-- Grid content here-->
+					<div class="services-content-grid js-services-grid">
+						<!-- JS content here-->
+					</div>
+				</div>
+			</section>
+
+			<!--Why Choose Us under services here-->
+			<section class="choose" id="choose">
+				<div class="choose-content hidden">
+					<h4>WHY CHOOSE US</h4>
+					<div class="choose-content-2">
+						<img class="choose-img-1" src="images/choose-pic.webp" />
+						<div class="choose-texts">
+							<h1>Highly Accountable for Your Event</h1>
+							<p>
+								Choose our eventify for its user-friendly interface, reliable
+								features, and exceptional support, ensuring a seamless event
+								planning experience.
+							</p>
+							<!-- Grid content here-->
+							<div class="choose-content-grid js-choose-grid">
+								<!-- JS content here-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Collection page content here-->
+			<section class="collection" id="collection">
+				<div class="collection-content hidden">
+					<h4>COLLECTION</h4>
+					<div class="collection-texts">
+						<h1>Some of Our Past Events</h1>
+						<p>
+							Explore curated past events showcasing memorable experiences and
+							client visions brought to life. See our commitment to flawless
+							execution.
+						</p>
+					</div>
+					<!-- Grid content here-->
+					<div class="collection-content-grid js-collection-grid">
+						<!-- JS content here-->
+					</div>
+				</div>
+			</section>
+
+			<!--Pricing page content here-->
+			<section class="pricing" id="pricing">
+				<div class="pricing-content hidden">
+					<h4>OUR PRICING</h4>
+					<div class="pricing-texts">
+						<h1>Select Your Event Package</h1>
+						<p>
+							Choose from our best event packages at Eventify. Whether it's an
+							intimate gathering or a grand celebration, we offer uniquely
+							tailored plans to fit your budget and make your event truly
+							unforgettable and special.
+						</p>
+					</div>
+					<!-- Grid content here-->
+					<div class="pricing-content-grid js-pricing-grid">
+						<!-- JS content here-->
+					</div>
+				</div>
+			</section>
+
+			<!--Contact page content here-->
+			<section class="contact" id="contact">
+				<div class="contact-content hidden">
+					<h4>CONTACT US</h4>
+					<div class="contact-texts">
+						<h1>Discuss Your Event Idea with Our Team</h1>
+						<p>
+							Reach out to us with your event inquiries and ideas. Our team is
+							here to assist you in planning and organizing memorable
+							experiences tailored to your vision.
+						</p>
+						<div>
+							<a href="mailto:enricojay.ej@gmail.com">
+								<button class="contact-button" id="contact-us-button">
+									CONTACT US
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Footer page content here-->
+			<section class="footer">
+				<div class="footer-content hidden">
+					<h3>Follow us For More Updates</h3>
+					<p>
+						Stay connected with us on social media to get the latest updates on
+						our exciting events and behind-the-scenes content.
+					</p>
+					<div class="footer-social-links">
+						<a href="https://www.facebook.com/" target="_blank">
+							<i class="fa-brands fa-facebook-f" id="footerIcon"></i>
+						</a>
+						<a href="https://www.tiktok.com/" target="_blank">
+							<i class="fa-brands fa-tiktok" id="footerIcon"></i>
+						</a>
+						<a href="https://www.messenger.com/" target="_blank">
+							<i class="fa-brands fa-facebook-messenger" id="footerIcon"></i>
+						</a>
+						<a href="https://www.instagram.com/" target="_blank">
+							<i class="fa-brands fa-instagram" id="footerIcon"></i>
+						</a>
+					</div>
+					<div class="footer-credits">
+						<p>
+							Created By
+							<a href="https://github.com/" target="_blank">
+								EJ Aquino Sison
+							</a>
+							| All Rights Reserved
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!--API JQuery library for smooth scrolling-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!--JS link file-->
+		<script type="module" src="scripts/main.js"></script>
+	</body>
+</html>
