@@ -1,0 +1,24 @@
+.header {
+    @apply flex justify-center fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ease-out;
+}
+.nav {
+    @apply flex justify-between items-center h-[70px] w-priWidth;
+}
+.nav > h3 {
+    @apply text-secBold cursor-pointer;
+}
+.nav > ul {
+    @apply absolute flex flex-col w-full top-[70px] gap-y-[30px] py-[30px] bg-priColor transition-all duration-300 ease-out;
+    @apply md:static md:flex-row md:w-auto md:top-auto md:gap-x-[50px] md:py-0 md:bg-inherit md:left-auto;
+}
+.nav > ul > li {
+    @apply w-priWidth mx-auto;
+    @apply md:w-auto;
+}
+.nav > ul > li > a {
+    @apply text-secText hover:text-secBold;
+}
+.nav > span {
+    @apply text-[30px] text-secBold;
+    @apply md:hidden;
+}

@@ -1,0 +1,36 @@
+.gallery {
+    @apply py-[100px];
+}
+.gallery-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.gallery-cntnr > h4,
+.gallery-cntnr > h2,
+.gallery-cntnr > p:nth-of-type(2) {
+    @apply text-center;
+}
+.gallery-cntnr > p:nth-of-type(1) {
+    @apply text-center w-secWidth mx-auto;
+}
+.gallery-grid {
+    @apply grid grid-cols-1 items-center mx-auto mt-[40px] gap-[10px] w-full;
+    @apply md:grid-cols-2 xl:grid-cols-4;
+}
+.gallery-grid > div {
+    @apply relative size-full;
+}
+.gallery-grid > div > img {
+    @apply size-full object-cover rounded-[2px];
+}
+.gallery-grid > div > div {
+    @apply absolute opacity-0 flex justify-center items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-[2px] transition-opacity duration-200 ease-out;
+}
+.gallery-grid > div:hover > div {
+    @apply opacity-100;
+}
+.gallery-grid > div > div > button {
+    @apply text-priBold bg-priBG border-[#f5f5f7] hover:bg-white hover:border-white;
+}
+.gallery-cntnr > button {
+    @apply mx-auto mt-[20px];
+}

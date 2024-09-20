@@ -1,0 +1,20 @@
+.footer {
+    @apply bg-[#111111] py-[50px];
+}
+.footer-cntnr {
+    @apply flex flex-col items-center gap-y-[30px] w-priWidth mx-auto;
+    @apply xl:flex-row xl:justify-between;
+}
+.footer-cntnr > h3 {
+    @apply text-secBold cursor-pointer;
+    @apply xl:pr-[60px];
+}
+.footer-cntnr > p {
+    @apply text-[#808080];
+}
+.footer-socials {
+    @apply flex gap-x-[20px];
+}
+.footer-socials > img {
+    @apply size-[22px] cursor-pointer transition-transform duration-200 ease-out hover:scale-[1.15];
+}

@@ -1,0 +1,28 @@
+.about {
+    @apply py-[100px];
+}
+.about-cntnr {
+    @apply flex flex-col-reverse gap-y-[50px] w-priWidth mx-auto;
+    @apply xl:flex-row xl:justify-between;
+}
+.about-cntnr > img {
+    @apply w-secWidth h-auto mx-auto;
+    @apply xl:mx-0 xl:w-[47.5%];
+}
+.about-right {
+    @apply flex flex-col gap-y-[10px];
+    @apply xl:w-[47.5%];
+}
+.about-right-grid {
+    @apply grid grid-cols-1 gap-[20px] mt-[20px];
+    @apply md:grid-cols-2;
+}
+.about-right-grid > div {
+    @apply flex gap-x-[20px];
+}
+.about-right-grid > div > span {
+    @apply text-[40px] text-priColor;
+}
+.about-right-grid > div > div {
+    @apply flex flex-col gap-y-[10px];
+}

@@ -1,0 +1,35 @@
+.pricing {
+    @apply bg-secBG py-[100px];
+}
+.pricing-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.pricing-cntnr > h4,
+.pricing-cntnr > h2 {
+    @apply text-center;
+}
+.pricing-cntnr > p {
+    @apply text-center w-secWidth mx-auto;
+}
+.pricing-grid {
+    @apply grid grid-cols-1 items-center mx-auto mt-[40px] gap-y-[25px] gap-x-[30px] w-full;
+    @apply md:grid-cols-2 xl:grid-cols-4;
+}
+.pricing-grid > div {
+    @apply flex flex-col text-center gap-y-[10px] p-[30px] bg-priBG rounded-[2px] shadow-md;
+}
+.pricing-grid > div > h2 > span {
+    @apply text-[1.5rem];
+}
+.pricing-grid-perks {
+    @apply flex flex-col items-center gap-y-[10px];
+}
+.pricing-grid-perks > div {
+    @apply flex items-center gap-x-[10px];
+}
+.pricing-grid-perks > div > span {
+    @apply text-[1.25rem] text-priText;
+}
+.pricing-grid > div > button {
+    @apply mx-auto mt-[10px];
+}

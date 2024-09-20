@@ -1,0 +1,35 @@
+.services {
+    @apply bg-secBG py-[100px];
+}
+.services-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.services-cntnr > h4,
+.services-cntnr > h2 {
+    @apply text-center;
+}
+.services-cntnr > p {
+    @apply text-center w-secWidth mx-auto;
+}
+.services-grid {
+    @apply grid grid-cols-1 mx-auto mt-[40px] gap-x-[30px] gap-y-[25px];
+    @apply md:grid-cols-2 xl:grid-cols-3;
+}
+.services-grid > div {
+    @apply flex flex-col p-[30px] gap-y-[10px] bg-priBG rounded-[2px] shadow-md transition-transform duration-200 ease-out hover:scale-[1.05];
+}
+.services-grid > div > span {
+    @apply text-priBold text-[40px] mb-[10px];
+}
+.services-grid > div > p {
+    @apply line-clamp-4;
+}
+.services-grid > div > div {
+    @apply flex gap-x-[10px] mt-auto mr-auto items-center cursor-pointer;
+}
+.services-grid > div > div > span {
+    @apply text-[1.25rem] text-[#808080];
+}
+.services-grid > div > div > p {
+    @apply text-[#808080];
+}
