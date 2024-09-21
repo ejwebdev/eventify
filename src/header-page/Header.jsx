@@ -59,8 +59,8 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a href="#about" onClick={(e) => links("about", e)}>
-                            About
+                        <a href="#aboutus" onClick={(e) => links("aboutus", e)}>
+                            About Us
                         </a>
                     </li>
                     <li>

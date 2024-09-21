@@ -16,7 +16,7 @@ const aboutRight = [
 
 function About() {
     return (
-        <section className="about" id="about">
+        <section className="about" id="aboutus">
             <div className="about-cntnr">
                 <img
                     src={aboutImg}
