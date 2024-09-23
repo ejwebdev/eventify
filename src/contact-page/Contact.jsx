@@ -6,7 +6,7 @@ const contactRight = [
     {
         icon: "perm_phone_msg",
         title: "Our Contact",
-        desc: "Globe: +63977-434-5155",
+        desc: "+63977-434-5155",
     },
     {
         icon: "stacked_email",
