@@ -3,7 +3,7 @@
 }
 .about-cntnr {
     @apply flex flex-col-reverse gap-y-[50px] w-priWidth mx-auto;
-    @apply xl:flex-row xl:justify-between;
+    @apply xl:flex-row xl:justify-between xl:items-start;
 }
 .about-cntnr > img {
     @apply w-secWidth h-auto mx-auto;
