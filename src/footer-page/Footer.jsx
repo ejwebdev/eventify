@@ -24,8 +24,10 @@ function Footer() {
     return (
         <section className="footer">
             <div className="footer-cntnr">
-                <h3 onClick={refreshPage}>Eventify.</h3>
-                <div className="footer-socials">
+                <div>
+                    <h3 onClick={refreshPage}>Eventify.</h3>
+                </div>
+                <div>
                     <img
                         src={facebook}
                         alt="Eventify Facebook"
@@ -51,7 +53,9 @@ function Footer() {
                         onClick={instagramLink}
                     />
                 </div>
-                <p>&copy; 2024 Enrico Jay</p>
+                <div>
+                    <p>&copy; 2024 Enrico Jay</p>
+                </div>
             </div>
         </section>
     );
