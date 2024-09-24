@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./pricing.css";
 
 const pricing = [
@@ -11,6 +12,7 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
+        link: "details",
     },
     {
         title: "Parties",
@@ -22,6 +24,7 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
+        link: "details",
     },
     {
         title: "Wedding",
@@ -33,6 +36,7 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
+        link: "details",
     },
     {
         title: "Festivals",
@@ -44,14 +48,11 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
+        link: "details",
     },
 ];
 
 function Pricing() {
-    const pricingPlan = () => {
-        window.location.href = "details";
-    };
-
     return (
         <section className="pricing">
             <div className="pricing-cntnr">
@@ -81,7 +82,12 @@ function Pricing() {
                                     </div>
                                 ))}
                             </div>
-                            <button onClick={pricingPlan}>Select Plan</button>
+                            <Link
+                                to={pricing.link}
+                                className="pricing-grid-link"
+                            >
+                                <button>Select Plan</button>
+                            </Link>
                         </div>
                     ))}
                 </div>

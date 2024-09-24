@@ -4,6 +4,6 @@
 .details-cntnr {
     @apply w-priWidth flex text-center flex-col gap-y-[10px];
 }
-.details-cntnr > button {
+.details-link {
     @apply mt-[10px] mx-auto;
 }

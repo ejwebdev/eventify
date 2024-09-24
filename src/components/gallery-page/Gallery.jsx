@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import img1 from "../../assets/gallery-1.webp";
 import img2 from "../../assets/gallery-2.webp";
@@ -15,10 +16,6 @@ const gallery = [
 ];
 
 function Gallery() {
-    const galleryLink = (url) => {
-        window.location.href = url;
-    };
-
     const [messageVisible, setMessageVisible] = useState(false);
     const handleLoadMore = () => {
         setMessageVisible(true);
@@ -45,13 +42,12 @@ function Gallery() {
                                 draggable="false"
                                 alt="Eventify Gallery"
                             />
-                            <div>
-                                <button
-                                    onClick={() => galleryLink(gallery.link)}
-                                >
-                                    View Details
-                                </button>
-                            </div>
+                            <Link
+                                to={gallery.link}
+                                className="gallery-grid-link"
+                            >
+                                <button>View Details</button>
+                            </Link>
                         </div>
                     ))}
                 </div>
