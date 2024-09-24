@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./services.css";
 
 const services = [
@@ -40,10 +41,6 @@ const services = [
 ];
 
 function Services() {
-    const servicesLink = (url) => {
-        window.location.href = url;
-    };
-
     return (
         <section className="services" id="services">
             <div className="services-cntnr">
@@ -63,12 +60,15 @@ function Services() {
                             </span>
                             <h3>{services.title}</h3>
                             <p>{services.desc}</p>
-                            <div onClick={() => servicesLink(services.link)}>
+                            <Link
+                                to={services.link}
+                                className="services-grid-link"
+                            >
                                 <span className="material-symbols-rounded">
                                     arrow_outward
                                 </span>
                                 <p>Read More</p>
-                            </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

@@ -24,12 +24,12 @@
 .services-grid > div > p {
     @apply line-clamp-4;
 }
-.services-grid > div > div {
+.services-grid-link {
     @apply flex gap-x-[10px] mt-auto mr-auto items-center cursor-pointer;
 }
-.services-grid > div > div > span {
+.services-grid-link > span {
     @apply text-[1.25rem] text-[#808080];
 }
-.services-grid > div > div > p {
+.services-grid-link > p {
     @apply text-[#808080];
 }
