@@ -49,7 +49,7 @@ const pricing = [
 
 function Pricing() {
     const pricingPlan = () => {
-        window.location.href = "";
+        window.location.href = "details";
     };
 
     return (

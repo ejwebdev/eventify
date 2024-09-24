@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about-img.webp";
+import aboutImg from "../../assets/about-img.webp";
 import "./about.css";
 
 const aboutRight = [
@@ -20,7 +20,7 @@ function About() {
             <div className="about-cntnr">
                 <img
                     src={aboutImg}
-                    alt="Eventify About Logo"
+                    alt="Eventify About Image"
                     draggable="false"
                 />
                 <div className="about-right">

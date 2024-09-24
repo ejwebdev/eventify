@@ -1,17 +1,17 @@
 import { useState } from "react";
-import img1 from "../assets/gallery-1.webp";
-import img2 from "../assets/gallery-2.webp";
-import img3 from "../assets/gallery-3.webp";
-import img4 from "../assets/gallery-4.webp";
-import img5 from "../assets/gallery-5.webp";
+import img1 from "../../assets/gallery-1.webp";
+import img2 from "../../assets/gallery-2.webp";
+import img3 from "../../assets/gallery-3.webp";
+import img4 from "../../assets/gallery-4.webp";
+import img5 from "../../assets/gallery-5.webp";
 import "./gallery.css";
 
 const gallery = [
-    { img: img1, class: "md:col-span-2 md:row-span-2", link: "" },
-    { img: img2, link: "" },
-    { img: img3, link: "" },
-    { img: img4, link: "" },
-    { img: img5, link: "" },
+    { img: img1, class: "md:col-span-2 md:row-span-2", link: "details" },
+    { img: img2, link: "details" },
+    { img: img3, link: "details" },
+    { img: img4, link: "details" },
+    { img: img5, link: "details" },
 ];
 
 function Gallery() {

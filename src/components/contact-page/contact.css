@@ -29,7 +29,7 @@
     @apply mr-auto;
 }
 .contact-left > .notification {
-    @apply absolute bottom-[100px] left-1/2 -translate-x-1/2 font-semibold text-sm whitespace-nowrap;
+    @apply absolute bottom-[150px] left-1/2 -translate-x-1/2 font-semibold text-sm whitespace-nowrap;
 }
 .contact-left > .notification.success {
     @apply text-[#53b256];

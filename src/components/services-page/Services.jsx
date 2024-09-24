@@ -5,37 +5,37 @@ const services = [
         icon: "cake",
         title: "Birthday Party",
         desc: "Celebrate your special day with a memorable and fun-filled birthday party expertly organized to ensure every detail is perfect.",
-        link: "",
+        link: "details",
     },
     {
         icon: "local_bar",
         title: "Anniversaries",
         desc: "Celebrate your special milestones with our exceptional anniversary event planning services.",
-        link: "",
+        link: "details",
     },
     {
         icon: "heart_check",
         title: "Wedding",
         desc: "Create unforgettable memories with our comprehensive wedding event planning services.",
-        link: "",
+        link: "details",
     },
     {
         icon: "meeting_room",
         title: "Formal Event",
         desc: "Our formal event planning services ensure a sophisticated and seamless experience for your special occasions.",
-        link: "",
+        link: "details",
     },
     {
         icon: "celebration",
         title: "Private Party",
         desc: "We offer exclusive private party planning to create memorable and intimate celebrations tailored to your desires.",
-        link: "",
+        link: "details",
     },
     {
         icon: "comedy_mask",
         title: "Masquerade Party",
         desc: "We specialize in organizing captivating masquerade parties, blending mystery and elegance for an enchanting event experience.",
-        link: "",
+        link: "details",
     },
 ];
 

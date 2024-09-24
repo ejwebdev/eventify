@@ -1,7 +1,7 @@
-import facebook from "../assets/facebook.svg";
-import tiktok from "../assets/tiktok.svg";
-import messenger from "../assets/messenger.svg";
-import instagram from "../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import tiktok from "../../assets/tiktok.svg";
+import messenger from "../../assets/messenger.svg";
+import instagram from "../../assets/instagram.svg";
 import "./footer.css";
 
 function Footer() {
