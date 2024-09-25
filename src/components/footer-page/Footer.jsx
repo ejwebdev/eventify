@@ -5,6 +5,19 @@ import instagram from "../../assets/instagram.svg";
 import "./footer.css";
 
 function Footer() {
+    const smoothScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    // Event Listener
+    const links = (id, event) => {
+        event.preventDefault();
+        smoothScroll(id);
+    };
+
     const refreshPage = () => {
         window.location.href = "";
     };
@@ -24,10 +37,43 @@ function Footer() {
     return (
         <section className="footer">
             <div className="footer-cntnr">
-                <div>
-                    <h3 onClick={refreshPage}>Eventify.</h3>
-                </div>
-                <div>
+                <h2 onClick={refreshPage}>Eventify.</h2>
+                <p>
+                    Discover expert event planning services that offers
+                    affordable customizable packages to make your special
+                    occasion unforgettable.
+                </p>
+                <ul className="footer-links">
+                    <li>
+                        <a href="#home" onClick={(e) => links("home", e)}>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#aboutus" onClick={(e) => links("aboutus", e)}>
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#services"
+                            onClick={(e) => links("services", e)}
+                        >
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gallery" onClick={(e) => links("gallery", e)}>
+                            Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" onClick={(e) => links("contact", e)}>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div className="footer-socials">
                     <img
                         src={facebook}
                         alt="Eventify Facebook"
@@ -53,9 +99,7 @@ function Footer() {
                         onClick={instagramLink}
                     />
                 </div>
-                <div>
-                    <p>&copy; 2024 Enrico Jay</p>
-                </div>
+                <p>&copy; 2024 Enrico Jay</p>
             </div>
         </section>
     );
