@@ -1,27 +1,35 @@
 .footer {
-    @apply bg-[#111111] pt-[100px] pb-[50px];
+    @apply bg-[#111111] py-[50px];
 }
 .footer-cntnr {
-    @apply flex flex-col text-center w-priWidth mx-auto gap-y-[10px];
+    @apply flex flex-col w-priWidth mx-auto gap-y-[30px];
 }
-.footer-cntnr > h2 {
-    @apply text-secBold cursor-pointer mx-auto;
+.footer-top {
+    @apply flex flex-col gap-y-[30px] items-center;
+    @apply lg:flex-row lg:justify-between;
 }
-.footer-cntnr > p:nth-of-type(1) {
-    @apply w-terWidth text-secText mx-auto;
+.footer-top > h3 {
+    @apply text-secBold cursor-pointer;
 }
 .footer-links {
-    @apply flex flex-wrap justify-center mt-[20px] gap-y-[30px] gap-x-[50px];
+    @apply flex flex-wrap justify-center gap-y-[30px] gap-x-[50px];
 }
 .footer-links > li > a {
     @apply text-[#808080] hover:text-secBold;
 }
+.footer-cntnr > hr {
+    @apply border-[#1e1e1e];
+}
+.footer-bottom {
+    @apply flex flex-col-reverse gap-y-[30px] items-center;
+    @apply lg:flex-row lg:justify-between;
+}
+.footer-bottom > p {
+    @apply text-[#808080];
+}
 .footer-socials {
-    @apply flex justify-center gap-[15px] my-[20px];
+    @apply flex gap-x-[15px];
 }
 .footer-socials > img {
     @apply size-[22px] transition-transform duration-300 ease-out cursor-pointer hover:scale-[1.15];
-}
-.footer-cntnr > p:nth-of-type(2) {
-    @apply text-[#808080];
 }

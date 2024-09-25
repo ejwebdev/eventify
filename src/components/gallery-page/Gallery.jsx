@@ -42,12 +42,11 @@ function Gallery() {
                                 draggable="false"
                                 alt="Eventify Gallery"
                             />
-                            <Link
-                                to={gallery.link}
-                                className="gallery-grid-link"
-                            >
-                                <button>View Details</button>
-                            </Link>
+                            <div className="gallery-grid-link">
+                                <Link to={gallery.link}>
+                                    <button>View Details</button>
+                                </Link>
+                            </div>
                         </div>
                     ))}
                 </div>

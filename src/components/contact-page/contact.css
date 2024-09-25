@@ -16,7 +16,7 @@
     @apply flex gap-x-[5px] mb-[10px] font-semibold font-secFont text-priBold;
 }
 .contact-left > form label > span {
-    @apply text-[#d62633];
+    @apply font-priFont text-[#d62633];
 }
 .contact-left > form input,
 .contact-left > form textarea {
