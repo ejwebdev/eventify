@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-[#111111] py-[50px];
+    @apply bg-[#111111] py-[30px];
 }
 .footer-cntnr {
     @apply grid grid-cols-1 items-center gap-y-[30px] w-priWidth mx-auto;
