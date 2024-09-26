@@ -4,7 +4,7 @@
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    @apply w-[5px];
+    @apply w-[8px];
 }
 ::-webkit-scrollbar-track {
     @apply bg-priBG;

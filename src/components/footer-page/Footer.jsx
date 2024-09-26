@@ -87,24 +87,28 @@ function Footer() {
                             src={facebook}
                             alt="Eventify Facebook"
                             draggable="false"
+                            rel="noopener noreferrer"
                             onClick={facebookLink}
                         />
                         <img
                             src={tiktok}
                             alt="Eventify Tiktok"
                             draggable="false"
+                            rel="noopener noreferrer"
                             onClick={tiktokLink}
                         />
                         <img
                             src={messenger}
                             alt="Eventify Messenger"
                             draggable="false"
+                            rel="noopener noreferrer"
                             onClick={messengerLink}
                         />
                         <img
                             src={instagram}
                             alt="Eventify Instagram"
                             draggable="false"
+                            rel="noopener noreferrer"
                             onClick={instagramLink}
                         />
                     </div>

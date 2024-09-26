@@ -2,7 +2,11 @@ import "./hero.css";
 
 function Hero() {
     const bookMeeting = () => {
-        window.open("https://calendly.com/ejwebdev25", "_blank");
+        window.open(
+            "https://calendly.com/ejwebdev25",
+            "_blank",
+            "noopener,noreferrer"
+        );
     };
 
     return (
