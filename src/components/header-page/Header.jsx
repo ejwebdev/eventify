@@ -57,7 +57,7 @@ function Header() {
             smoothScroll(id);
         } else {
             navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 100);
+            setTimeout(() => smoothScroll(id), 0);
         }
     };
 

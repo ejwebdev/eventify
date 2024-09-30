@@ -4,6 +4,3 @@
 .details-cntnr {
     @apply w-priWidth flex text-center flex-col gap-y-[10px];
 }
-.details-link {
-    @apply mt-[10px] mx-auto;
-}
