@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./header.css";
 
 function Header() {
@@ -37,19 +38,31 @@ function Header() {
         }
     };
 
+    const location = useLocation();
+    const bgColor =
+        location.pathname === "/"
+            ? isScrolled
+                ? "bg-priColor"
+                : "bg-transparent"
+            : "bg-priColor";
+
+    const navigate = useNavigate();
+
     // Event Listener
     const links = (id, event) => {
         event.preventDefault();
         setIsMenuOpen(false);
-        smoothScroll(id);
+
+        if (window.location.pathname === "/") {
+            smoothScroll(id);
+        } else {
+            navigate("/", { replace: true });
+            setTimeout(() => smoothScroll(id), 100);
+        }
     };
 
     return (
-        <header
-            className={`header ${
-                isScrolled ? "bg-priColor" : "bg-transparent"
-            }`}
-        >
+        <header className={`header ${bgColor}`}>
             <nav className="nav">
                 <h3 onClick={refreshPage}>Eventify.</h3>
                 <ul className={isMenuOpen ? "left-0" : "-left-[200%]"}>

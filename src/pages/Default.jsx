@@ -1,4 +1,3 @@
-import Header from "../components/header-page/Header.jsx";
 import Hero from "../components/hero-page/Hero.jsx";
 import About from "../components/about-page/About.jsx";
 import Services from "../components/services-page/Services.jsx";
@@ -10,7 +9,6 @@ import Footer from "../components/footer-page/Footer.jsx";
 function Default() {
     return (
         <>
-            <Header />
             <Hero />
             <About />
             <Services />
