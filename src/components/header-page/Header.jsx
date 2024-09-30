@@ -53,13 +53,21 @@ function Header() {
         event.preventDefault();
         setIsMenuOpen(false);
 
-        if (window.location.pathname === "/") {
+        if (location.pathname === "/") {
             smoothScroll(id);
         } else {
-            navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 0);
+            navigate("/", { replace: true, state: { targetId: id } });
         }
     };
+
+    useEffect(() => {
+        if (location.state?.targetId) {
+            const element = document.getElementById(location.state.targetId);
+            if (element) {
+                element.scrollIntoView({ behavior: "auto" });
+            }
+        }
+    }, [location]);
 
     return (
         <header className={`header ${bgColor}`}>
