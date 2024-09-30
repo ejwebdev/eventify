@@ -12,7 +12,7 @@
     @apply text-center w-secWidth mx-auto;
 }
 .services-grid {
-    @apply grid grid-cols-1 mx-auto mt-[40px] gap-x-[30px] gap-y-[25px];
+    @apply grid grid-cols-1 mt-[40px] gap-x-[30px] gap-y-[25px];
     @apply md:grid-cols-2 xl:grid-cols-3;
 }
 .services-grid > div {
