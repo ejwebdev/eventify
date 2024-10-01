@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./pricing.css";
 
 const pricing = [
@@ -12,7 +11,6 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
-        link: "details",
     },
     {
         title: "Parties",
@@ -24,7 +22,6 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
-        link: "details",
     },
     {
         title: "Wedding",
@@ -36,7 +33,6 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
-        link: "details",
     },
     {
         title: "Festivals",
@@ -48,11 +44,21 @@ const pricing = [
             "Catering",
             "Entertainment",
         ],
-        link: "details",
     },
 ];
 
 function Pricing() {
+    const smoothScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const buttonLink = () => {
+        smoothScroll("contact");
+    };
+
     return (
         <section className="pricing">
             <div className="pricing-cntnr">
@@ -82,12 +88,7 @@ function Pricing() {
                                     </div>
                                 ))}
                             </div>
-                            <Link
-                                to={pricing.link}
-                                className="pricing-grid-link"
-                            >
-                                <button>Select Plan</button>
-                            </Link>
+                            <button onClick={buttonLink}>Get Started</button>
                         </div>
                     ))}
                 </div>

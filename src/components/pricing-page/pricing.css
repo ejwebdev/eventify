@@ -30,6 +30,6 @@
 .pricing-grid-perks > div > span {
     @apply text-[1.25rem] text-priText;
 }
-.pricing-grid-link {
+.pricing-grid > div > button {
     @apply mx-auto mt-[10px];
 }
