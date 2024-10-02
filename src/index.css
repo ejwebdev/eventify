@@ -45,5 +45,5 @@ h4 {
     @apply font-semibold font-secFont text-priBold tracking-[5px] text-sm;
 }
 button {
-    @apply font-semibold font-secFont text-sm py-[12px] px-[30px] rounded-[2px] text-secBold bg-priColor border border-solid border-priColor shadow-lg cursor-pointer transition-colors duration-200 ease-out hover:bg-[#000000] hover:border-[#000000] active:opacity-90;
+    @apply font-semibold font-secFont text-sm py-[12px] px-[30px] rounded-[2px] text-secBold bg-priColor border border-solid border-priColor shadow-lg cursor-pointer transition-colors duration-200 ease-out hover:bg-black hover:border-black active:opacity-90;
 }
