@@ -9,14 +9,25 @@
 }
 .nav > ul {
     @apply absolute flex flex-col w-full top-[70px] gap-y-[30px] py-[30px] bg-priColor transition-all duration-300 ease-out;
-    @apply md:static md:flex-row md:w-auto md:top-auto md:gap-x-[50px] md:py-0 md:bg-inherit md:left-auto;
+    @apply md:static md:flex-row md:w-auto md:h-full md:top-auto md:gap-x-[50px] md:py-0 md:bg-inherit md:left-auto;
 }
 .nav > ul > li {
-    @apply w-priWidth mx-auto;
-    @apply md:w-auto;
+    @apply relative w-priWidth mx-auto;
+    @apply md:w-auto md:flex md:h-full;
 }
-.nav > ul > li > a {
-    @apply text-secText hover:text-secBold;
+.nav > ul > li a {
+    @apply flex items-center gap-x-[5px] text-secText hover:text-secBold;
+}
+.nav > ul > li a > span {
+    @apply text-secBold;
+}
+.nav .dropdown {
+    @apply hidden relative bg-priColor flex-col left-0 mt-[30px] gap-y-[30px];
+    @apply md:absolute md:mt-0 md:top-[70px] md:gap-y-[20px] md:w-[170px] md:p-[20px] md:border-t md:border-t-[ebebef] md:shadow;
+}
+.nav > ul > li:hover > .dropdown,
+.nav .dropdown.open {
+    @apply flex;
 }
 .nav > span {
     @apply text-[30px] text-secBold;

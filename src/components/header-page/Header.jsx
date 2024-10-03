@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./header.css";
@@ -31,6 +32,11 @@ function Header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     const smoothScroll = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -52,6 +58,7 @@ function Header() {
     const links = (id, event) => {
         event.preventDefault();
         setIsMenuOpen(false);
+        setIsDropdownOpen(false);
 
         if (window.location.pathname === "/") {
             smoothScroll(id);
@@ -59,6 +66,11 @@ function Header() {
             navigate("/", { replace: true });
             setTimeout(() => smoothScroll(id), 0);
         }
+    };
+
+    const pageClick = () => {
+        setIsMenuOpen(false);
+        setIsDropdownOpen(false);
     };
 
     return (
@@ -78,11 +90,36 @@ function Header() {
                     </li>
                     <li>
                         <a
-                            href="#services"
-                            onClick={(e) => links("services", e)}
+                            href=""
+                            onClick={(e) => {
+                                e.preventDefault();
+                                toggleDropdown();
+                            }}
                         >
                             Services
+                            <span className="material-symbols-rounded">
+                                arrow_downward_alt
+                            </span>
                         </a>
+                        <ul
+                            className={`dropdown ${
+                                isDropdownOpen ? "open" : "hidden"
+                            }`}
+                        >
+                            <li>
+                                <a
+                                    href="#products"
+                                    onClick={(e) => links("services", e)}
+                                >
+                                    Offers
+                                </a>
+                            </li>
+                            <li>
+                                <Link to="service-details" onClick={pageClick}>
+                                    Service Details
+                                </Link>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#gallery" onClick={(e) => links("gallery", e)}>
