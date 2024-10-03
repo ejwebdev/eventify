@@ -1,18 +1,18 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout.jsx";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Header from "./pages/Header.jsx";
 import Default from "./pages/Default.jsx";
-import Details from "./pages/Details.jsx";
+import Service from "./pages/Service.jsx";
 
 function App() {
     return (
-        <BrowserRouter basename="/eventify/">
+        <HashRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<Header />}>
                     <Route index element={<Default />} />
-                    <Route path="details" element={<Details />} />
+                    <Route path="service-details" element={<Service />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

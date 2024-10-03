@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import img1 from "../../assets/gallery-1.webp";
 import img2 from "../../assets/gallery-2.webp";
@@ -8,11 +7,15 @@ import img5 from "../../assets/gallery-5.webp";
 import "./gallery.css";
 
 const gallery = [
-    { img: img1, class: "md:col-span-2 md:row-span-2", link: "details" },
-    { img: img2, link: "details" },
-    { img: img3, link: "details" },
-    { img: img4, link: "details" },
-    { img: img5, link: "details" },
+    {
+        img: img1,
+        class: "md:col-span-2 md:row-span-2",
+        link: "https://www.facebook.com/",
+    },
+    { img: img2, link: "https://www.instagram.com/" },
+    { img: img3, link: "https://www.instagram.com/" },
+    { img: img4, link: "https://www.instagram.com/" },
+    { img: img5, link: "https://www.facebook.com/" },
 ];
 
 function Gallery() {
@@ -22,6 +25,10 @@ function Gallery() {
         setTimeout(() => {
             setMessageVisible(false);
         }, 3000);
+    };
+
+    const galleryDetails = (link) => {
+        window.open(link, "_blank", "noopener,noreferrer");
     };
 
     return (
@@ -43,9 +50,11 @@ function Gallery() {
                                 alt="Eventify Gallery"
                             />
                             <div className="gallery-grid-link">
-                                <Link to={gallery.link}>
-                                    <button>View Details</button>
-                                </Link>
+                                <button
+                                    onClick={() => galleryDetails(gallery.link)}
+                                >
+                                    View Post
+                                </button>
                             </div>
                         </div>
                     ))}

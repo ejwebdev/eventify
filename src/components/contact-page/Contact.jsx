@@ -7,11 +7,13 @@ const contactRight = [
         icon: "perm_phone_msg",
         title: "Our Contact",
         desc: "+63977-434-5155",
+        link: "tel:09774345155",
     },
     {
         icon: "stacked_email",
         title: "Email Address",
         desc: "ejwebdev25@gmail.com",
+        link: "mailto:ejwebdev25@gmail.com",
     },
 ];
 
@@ -122,7 +124,9 @@ function Contact() {
                                 </span>
                                 <div>
                                     <h3>{contactRight.title}</h3>
-                                    <p>{contactRight.desc}</p>
+                                    <a href={contactRight.link}>
+                                        {contactRight.desc}
+                                    </a>
                                 </div>
                             </div>
                         ))}

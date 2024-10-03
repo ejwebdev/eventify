@@ -57,3 +57,6 @@
 .contact-right-grid > div > div {
     @apply flex flex-col gap-y-[10px];
 }
+.contact-right-grid > div > div > a {
+    @apply hover:text-priBold;
+}
