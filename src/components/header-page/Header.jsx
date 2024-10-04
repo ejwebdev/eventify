@@ -98,7 +98,7 @@ function Header() {
                         >
                             Services
                             <span className="material-symbols-rounded">
-                                arrow_downward_alt
+                                keyboard_arrow_down
                             </span>
                         </a>
                         <ul
