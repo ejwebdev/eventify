@@ -9,7 +9,7 @@
     @apply text-secBold;
 }
 .home-cntnr > p {
-    @apply text-secText w-terWidth mx-auto;
+    @apply text-secText w-quaWidth mx-auto;
 }
 .home-cntnr > button {
     @apply mt-[10px] mx-auto;

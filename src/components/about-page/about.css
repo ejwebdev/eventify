@@ -6,7 +6,7 @@
     @apply xl:flex-row xl:justify-between xl:items-start;
 }
 .about-cntnr > img {
-    @apply w-secWidth h-auto mx-auto;
+    @apply w-terWidth h-auto mx-auto;
     @apply xl:mx-0 xl:w-[47.5%];
 }
 .about-right {

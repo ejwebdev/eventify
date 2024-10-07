@@ -23,7 +23,8 @@ export default {
             width: {
                 priWidth: "clamp(200px, 90vw, 1200px)",
                 secWidth: "clamp(200px, 90vw, 800px)",
-                terWidth: "clamp(200px, 90vw, 400px)",
+                terWidth: "clamp(200px, 90vw, 600px)",
+                quaWidth: "clamp(200px, 90vw, 400px)",
             },
             backgroundImage: {
                 priBGImg: "url('../../assets/hero-bg.webp')",
