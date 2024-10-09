@@ -2,20 +2,13 @@ import facebook from "../../assets/facebook.svg";
 import tiktok from "../../assets/tiktok.svg";
 import messenger from "../../assets/messenger.svg";
 import instagram from "../../assets/instagram.svg";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     // Event Listener
-    const links = (id, event) => {
-        event.preventDefault();
-        smoothScroll(id);
+    const pageLinks = () => {
+        window.scrollTo(0, 0);
     };
 
     const refreshPage = () => {
@@ -41,41 +34,29 @@ function Footer() {
                     <h3 onClick={refreshPage}>Eventify.</h3>
                     <ul className="footer-links">
                         <li>
-                            <a href="#home" onClick={(e) => links("home", e)}>
+                            <Link to="/" onClick={pageLinks}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#aboutus"
-                                onClick={(e) => links("aboutus", e)}
-                            >
+                            <Link to="/aboutus" onClick={pageLinks}>
                                 About Us
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#services"
-                                onClick={(e) => links("services", e)}
-                            >
+                            <Link to="/services" onClick={pageLinks}>
                                 Services
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#gallery"
-                                onClick={(e) => links("gallery", e)}
-                            >
+                            <Link to="/gallery" onClick={pageLinks}>
                                 Gallery
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="#contact"
-                                onClick={(e) => links("contact", e)}
-                            >
+                            <Link to="/contact" onClick={pageLinks}>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import "./header.css";
 
 function Header() {
@@ -37,40 +36,19 @@ function Header() {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     const location = useLocation();
     const bgColor =
         location.pathname === "/"
             ? isScrolled
-                ? "bg-priColor"
-                : "bg-transparent"
-            : "bg-priColor";
-
-    const navigate = useNavigate();
+                ? "bg-priColor fixed"
+                : "bg-transparent fixed"
+            : "bg-priColor sticky";
 
     // Event Listener
-    const links = (id, event) => {
-        event.preventDefault();
+    const pageLinks = () => {
         setIsMenuOpen(false);
         setIsDropdownOpen(false);
-
-        if (window.location.pathname === "/") {
-            smoothScroll(id);
-        } else {
-            navigate("/", { replace: true });
-            setTimeout(() => smoothScroll(id), 0);
-        }
-    };
-
-    const pageClick = () => {
-        setIsMenuOpen(false);
-        setIsDropdownOpen(false);
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -79,14 +57,14 @@ function Header() {
                 <h3 onClick={refreshPage}>Eventify.</h3>
                 <ul className={isMenuOpen ? "left-0" : "-left-[200%]"}>
                     <li>
-                        <a href="#home" onClick={(e) => links("home", e)}>
+                        <Link to="/" onClick={pageLinks}>
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#aboutus" onClick={(e) => links("aboutus", e)}>
+                        <Link to="/aboutus" onClick={pageLinks}>
                             About Us
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a
@@ -107,29 +85,26 @@ function Header() {
                             }`}
                         >
                             <li>
-                                <a
-                                    href="#products"
-                                    onClick={(e) => links("services", e)}
-                                >
+                                <Link to="/services" onClick={pageLinks}>
                                     Offers
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <Link to="service-details" onClick={pageClick}>
+                                <Link to="/service-details" onClick={pageLinks}>
                                     Service Details
                                 </Link>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#gallery" onClick={(e) => links("gallery", e)}>
+                        <Link to="/gallery" onClick={pageLinks}>
                             Gallery
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact" onClick={(e) => links("contact", e)}>
+                        <Link to="/contact" onClick={pageLinks}>
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <span className="material-symbols-rounded" onClick={toggleMenu}>

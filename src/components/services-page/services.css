@@ -1,5 +1,5 @@
 .services {
-    @apply bg-secBG py-[100px];
+    @apply bg-secBG py-[80px];
 }
 .services-cntnr {
     @apply flex flex-col w-priWidth mx-auto gap-y-[10px];

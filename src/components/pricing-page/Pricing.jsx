@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./pricing.css";
 
 const pricing = [
@@ -48,15 +49,10 @@ const pricing = [
 ];
 
 function Pricing() {
-    const smoothScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
-    const buttonLink = () => {
-        smoothScroll("contact");
+    const navigate = useNavigate();
+    const contactClick = () => {
+        navigate("/contact");
+        window.scrollTo(0, 0);
     };
 
     return (
@@ -88,7 +84,7 @@ function Pricing() {
                                     </div>
                                 ))}
                             </div>
-                            <button onClick={buttonLink}>Get Started</button>
+                            <button onClick={contactClick}>Get Started</button>
                         </div>
                     ))}
                 </div>

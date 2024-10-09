@@ -3,8 +3,6 @@ import About from "../components/about-page/About.jsx";
 import Services from "../components/services-page/Services.jsx";
 import Gallery from "../components/gallery-page/Gallery.jsx";
 import Pricing from "../components/pricing-page/Pricing.jsx";
-import Contact from "../components/contact-page/Contact.jsx";
-import Footer from "../components/footer-page/Footer.jsx";
 
 function Default() {
     return (
@@ -14,8 +12,6 @@ function Default() {
             <Services />
             <Gallery />
             <Pricing />
-            <Contact />
-            <Footer />
         </>
     );
 }
