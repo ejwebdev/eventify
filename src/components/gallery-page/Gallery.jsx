@@ -32,7 +32,7 @@ function Gallery() {
     };
 
     return (
-        <section className="gallery" id="gallery">
+        <section className="gallery">
             <div className="gallery-cntnr">
                 <h4>GALLERY</h4>
                 <h2>Some of Our Past Events</h2>

@@ -42,7 +42,7 @@ const services = [
 
 function Services() {
     return (
-        <section className="services" id="services">
+        <section className="services">
             <div className="services-cntnr">
                 <h4>SERVICES</h4>
                 <h2>Event Service We Offer</h2>

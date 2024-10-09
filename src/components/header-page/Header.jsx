@@ -37,7 +37,7 @@ function Header() {
     };
 
     const location = useLocation();
-    const bgColor =
+    const header =
         location.pathname === "/"
             ? isScrolled
                 ? "bg-priColor fixed"
@@ -52,7 +52,7 @@ function Header() {
     };
 
     return (
-        <header className={`header ${bgColor}`}>
+        <header className={`header ${header}`}>
             <nav className="nav">
                 <h3 onClick={refreshPage}>Eventify.</h3>
                 <ul className={isMenuOpen ? "left-0" : "-left-[200%]"}>

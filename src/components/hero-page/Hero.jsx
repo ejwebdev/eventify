@@ -10,7 +10,7 @@ function Hero() {
     };
 
     return (
-        <section className="home" id="home">
+        <section className="home">
             <div className="home-cntnr">
                 <h4>EVENTIFY</h4>
                 <h1>Event Planner</h1>
