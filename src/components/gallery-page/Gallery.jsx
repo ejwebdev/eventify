@@ -9,7 +9,7 @@ import "./gallery.css";
 const gallery = [
     {
         img: img1,
-        class: "md:col-span-2 md:row-span-2",
+        class: "col-span-2 row-span-2",
         link: "https://www.facebook.com/",
     },
     { img: img2, link: "https://www.instagram.com/" },

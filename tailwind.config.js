@@ -28,6 +28,7 @@ export default {
             },
             backgroundImage: {
                 priBGImg: "url('../../assets/hero-bg.webp')",
+                secBGImg: "url('../../assets/banner-bg.jpg')",
             },
         },
         screens: {

@@ -13,8 +13,8 @@
     @apply text-center w-secWidth mx-auto;
 }
 .gallery-grid {
-    @apply grid grid-cols-1 items-center mx-auto mt-[40px] gap-[10px] w-full;
-    @apply md:grid-cols-2 xl:grid-cols-4;
+    @apply grid grid-cols-2 items-center mx-auto mt-[40px] gap-[10px] w-full;
+    @apply xl:grid-cols-4;
 }
 .gallery-grid > div {
     @apply relative size-full;

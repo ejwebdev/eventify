@@ -4,7 +4,7 @@ import Services from "../components/services-page/Services.jsx";
 import Gallery from "../components/gallery-page/Gallery.jsx";
 import Pricing from "../components/pricing-page/Pricing.jsx";
 
-function Default() {
+function DefaultPage() {
     return (
         <>
             <Hero />
@@ -16,4 +16,4 @@ function Default() {
     );
 }
 
-export default Default;
+export default DefaultPage;

@@ -1,0 +1,15 @@
+.banner {
+    @apply bg-secBGImg bg-cover bg-center bg-no-repeat flex items-center w-full h-auto bg-black bg-opacity-50 bg-blend-darken;
+}
+.banner-cntnr {
+    @apply w-priWidth flex flex-col text-center mx-auto my-[80px];
+}
+.banner-cntnr > h2 {
+    @apply text-secBold;
+}
+.banner-cntnr > p {
+    @apply text-secText w-secWidth my-[10px] mx-auto;
+}
+.banner-cntnr > button {
+    @apply mt-[10px] mx-auto;
+}
