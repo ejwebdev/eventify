@@ -1,0 +1,37 @@
+.testimonial {
+    @apply bg-secBG py-[80px];
+}
+.testimonial-cntnr {
+    @apply flex flex-col w-priWidth mx-auto gap-y-[10px];
+}
+.testimonial-cntnr > h4,
+.testimonial-cntnr > h2 {
+    @apply text-center;
+}
+.testimonial-cntnr > p {
+    @apply text-center w-secWidth mx-auto;
+}
+.testimonial-cntnr > .swiper {
+    @apply w-full h-full mt-[40px];
+}
+.testimonial-cntnr .swiper-slide {
+    @apply flex flex-col h-auto p-[30px] bg-priBG mb-[60px] rounded-[2px] shadow-lg cursor-grab;
+}
+.testimonial-cntnr .swiper-slide > div {
+    @apply flex justify-between;
+}
+.testimonial-cntnr .swiper-slide > div > img {
+    @apply size-[70px] rounded-full;
+}
+.testimonial-cntnr .swiper-slide > div > span {
+    @apply text-[40px] text-priColor;
+}
+.testimonial-cntnr .swiper-slide > h3 {
+    @apply mt-[20px];
+}
+.testimonial-cntnr .swiper-slide > p:nth-of-type(1) {
+    @apply mb-[10px] text-[#808080];
+}
+.testimonial-cntnr > .swiper .swiper-pagination-bullet-active {
+    @apply bg-priColor;
+}
