@@ -1,0 +1,16 @@
+.break {
+    @apply py-[80px];
+}
+.break-cntnr {
+    @apply grid grid-cols-2 gap-x-[30px] gap-y-[25px] w-priWidth mx-auto;
+    @apply md:grid-cols-4;
+}
+.break-cntnr > div {
+    @apply flex flex-col text-center rounded-[2px] p-[30px] border border-priColor;
+}
+.break-cntnr > div > h2 {
+    @apply flex justify-center gap-x-[5px];
+}
+.break-cntnr > div > h2 > span {
+    @apply text-[1.25rem];
+}
