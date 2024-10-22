@@ -48,7 +48,6 @@ function Header() {
     const pageLinks = () => {
         setIsMenuOpen(false);
         setIsDropdownOpen(false);
-        window.scrollTo(0, 0);
     };
 
     return (

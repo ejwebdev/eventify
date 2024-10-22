@@ -6,11 +6,6 @@ import { Link } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
-    // Event Listener
-    const pageLinks = () => {
-        window.scrollTo(0, 0);
-    };
-
     const refreshPage = () => {
         window.location.href = "";
     };
@@ -34,29 +29,19 @@ function Footer() {
                     <h3 onClick={refreshPage}>Eventify.</h3>
                     <ul className="footer-links">
                         <li>
-                            <Link to="/" onClick={pageLinks}>
-                                Home
-                            </Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/aboutus" onClick={pageLinks}>
-                                About Us
-                            </Link>
+                            <Link to="/aboutus">About Us</Link>
                         </li>
                         <li>
-                            <Link to="/services" onClick={pageLinks}>
-                                Services
-                            </Link>
+                            <Link to="/services">Services</Link>
                         </li>
                         <li>
-                            <Link to="/gallery" onClick={pageLinks}>
-                                Gallery
-                            </Link>
+                            <Link to="/gallery">Gallery</Link>
                         </li>
                         <li>
-                            <Link to="/contact" onClick={pageLinks}>
-                                Contact
-                            </Link>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
