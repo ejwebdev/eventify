@@ -1,6 +1,6 @@
-import Services from "../components/services-page/Services.jsx";
-import Break from "../components/break-page/Break.jsx";
-import Pricing from "../components/pricing-page/Pricing.jsx";
+import Services from "../components/services-section/Services.jsx";
+import Break from "../components/break-section/Break.jsx";
+import Pricing from "../components/pricing-section/Pricing.jsx";
 
 function ServicesPage() {
     return (

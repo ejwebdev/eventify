@@ -1,5 +1,5 @@
-import Gallery from "../components/gallery-page/Gallery.jsx";
-import Testimonial from "../components/testimonial-page/Testimonial.jsx";
+import Gallery from "../components/gallery-section/Gallery.jsx";
+import Testimonial from "../components/testimonial-section/Testimonial.jsx";
 
 function GalleryPage() {
     return (

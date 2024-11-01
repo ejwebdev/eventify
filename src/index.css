@@ -24,7 +24,7 @@ body {
     @apply bg-priBG text-priText font-priFont;
 }
 p {
-    @apply text-sm;
+    @apply text-sm leading-relaxed;
 }
 li {
     @apply list-none;
